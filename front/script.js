@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000');
+const socket = io('https://backpuissance4.onrender.com/');
 const boardElement = document.querySelector('.board');
 const roomElement = document.getElementById('room');
 const currentPlayerElement = document.getElementById('currentPlayer');
