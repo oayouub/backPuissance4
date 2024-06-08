@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Puissance 4</title>
     <style>
         .board {
@@ -28,15 +29,18 @@
     </style>
 </head>
 <body>
-    <p>Room</p>
-    <textarea name="" id="room"></textarea>
+    <h1>Puissance 4</h1>
+    <div class="form">
+    <p class="room">Room</p>
+    <textarea class="roomform" name="" id="room"></textarea>
     <p>pseudo</p>
-    <textarea name="" id="pseudo"></textarea>
-    <button id="joinButton">Join</button>
+    <textarea class="roomform" name="" id="pseudo"></textarea>
+    <button class="joinbutton" id="joinButton">Join</button>
+</div>
     <div class="board"></div>
     <p id="waitingMessage" style="display: none;">Waiting for another player...</p>
     <p>Current Player: <span id="currentPlayer">1</span></p>
-    <button id="restartButton">Restart</button>
+    <button id="restartButton" class="joinbutton">Restart</button>
 
     <script src="https://cdn.socket.io/4.7.5/socket.io.min.js" integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
